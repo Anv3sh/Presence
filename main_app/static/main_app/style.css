@@ -1,0 +1,171 @@
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #ff7f5d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffa790;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 100px;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #fafafa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #ff7f5d;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+.section-title p {
+  margin-bottom: 0;
+  color: #919191;
+  font-size: 14px;
+}
+
+/* ummm something  */
+#hey .Bbtn{
+  position: relative;
+  bottom: 0;
+  top: 0;
+  left: 2px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+
+}
+#hey .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid #ff7f5d;
+  color: #ff7f5d;
+}
+#hey .btn-get-started:hover {
+  background: #ff7f5d;
+  border: 2px solid #ff7f5d;
+  color: #fafafa;
+}
+#WApp .box{
+  display: flex;
+  top: 0;
+  bottom: 0;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+}
+#WApp .imageB{
+  width: 40%;
+}
+
+#WApp .textB{
+
+  position: relative;
+  bottom: 0;
+  top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 20px;
+
+}
+
+#WApp h1{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  position: relative;
+  padding-bottom: 10px;
+  left: 10px;
+}
+#WApp .textB .inputt
+{
+margin-top: 10px;
+}
+
+#WApp .inputt input{
+   border-style: none;
+   border-radius: 50px ;
+   border-color: #111;
+   background-color: #e2e2e2; 
+   width: 50%;
+   height: 50px;
+   /* right: 110px;
+   position: relative; */
+   padding: 20px;
+}
+#WApp .inputt .button-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#WApp .inputt .sbt,.cbtn{
+  border-radius: 60px;
+  border-style: none;
+  border: 2px solid #ff7f5d;
+  width: 150px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  transition: 0.2s;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  background-color:#ff7f5d ;
+}
+#WApp .inputt .sbt:hover,.cbtn:hover{
+  color: #ff7f5d;
+  background-color: white;
+}
+

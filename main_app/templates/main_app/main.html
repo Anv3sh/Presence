@@ -1,17 +1,62 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Presence | Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'main_app/style.css' %}" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <h1>hello!</h1>
-    {% if names %}
-    {% for name in names%}
-    <h2>{name}</h2>
-    {% endfor %}
-    {% endif %}
+  <main id="main">
+
+    <section class="App" id="WApp">
+      <div class="box">
+        <div class="imageB">
+          <img src="https://dummyimage.com/720x600" alt="">
+        </div>
+        <div class="textB">
+          <h1>Presence</h1>
+          <div class = "Bbtn" id="hey">
+            <a href="#services" class="btn-get-started scrollto">Check Camera</a>
+            <a href="#Webapp" class="btn-get-started scrollto">Capture Images</a>
+            <a href="#services" class="btn-get-started scrollto">Train Images</a>
+            <a href="#Webapp" class="btn-get-started scrollto">Attendance</a>
+            <div class="inputt">
+              <form action="" >
+                <div class="button-flex"> 
+                <input type="text" id="inEm" placeholder="Enter your Email" class="inEmail">
+                <button class="sbt" >SUBMIT</button>
+                <button class="cbtn" >CLOSE</button>
+              </div>
+              </form>              
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
 </body>
+
 </html>
