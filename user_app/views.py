@@ -12,13 +12,3 @@ def loginpage(request):
             login(request,user)
     return render(request,"user_app/index.html")
 
-def registerpage(request):
-    if request.method=='POST':
-        user=User()
-        user.first_name=request.POST['first_name']
-        user.last_name=request.POST['last_name']
-        user.username=request.POST['username']
-        user.email=request.POST['username']
-        user.password=request.POST['password']
-        user.save()
-    return render(request,'user_app/register.html')
