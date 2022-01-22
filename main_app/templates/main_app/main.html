@@ -27,18 +27,18 @@
 
 </head>
 
-<body>
+<body onload="runCam()">
   <main id="main">
 
     <section class="App" id="WApp">
       <div class="box">
-        <div class="imageB">
+        <div id="my_camera" class="imageB">
           <img src="https://dummyimage.com/720x600" alt="">
         </div>
         <div class="textB">
           <h1>Presence</h1>
           <div class = "Bbtn" id="hey">
-            <a href="#services" class="btn-get-started scrollto">Check Camera</a>
+            <a href="{% url 'check'%}" class="btn-get-started scrollto">Check Camera</a>
             <a href="#Webapp" class="btn-get-started scrollto">Capture Images</a>
             <a href="#services" class="btn-get-started scrollto">Train Images</a>
             <a href="#Webapp" class="btn-get-started scrollto">Attendance</a>
@@ -58,5 +58,15 @@
 
   </main><!-- End #main -->
 </body>
-
+<script>
+  function runCam(){
+    Webcam.set({
+        width: 320,
+        height: 240,
+        image_format: 'jpeg',
+        jpeg_quality: 90
+        });
+    Webcam.attach('#my_camera');
+  }
+</script>
 </html>
