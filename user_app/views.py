@@ -10,5 +10,7 @@ def loginpage(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request,user)
+            return render(request,"main_app/dummy.html")
+
     return render(request,"user_app/index.html")
 
